@@ -15,7 +15,7 @@ How to add your logo to KCM:
 7. Transfer the kcm-branding.jar file to your KCM server into /etc/kcm-setup/
 8. In your docker-compose.yml guacamole section, under environment add USE_DEFAULT_BRANDING: "N" and in volumes right below that add the following line:
    
-   &nbsp;-&nbsp; "/etc/kcm-setup/kcm-branding.jar:/etc/guacamole/extensions/kcm-branding.jar:ro"
+   &nbsp;-&nbsp;"/etc/kcm-setup/kcm-branding.jar:/etc/guacamole/extensions/kcm-branding.jar:ro"
 
 10. Run the command sudo ./kcm-setup stop (required)
 11. Run the command sudo ./kcm-setup upgrade and when prompted press Y for yes.
